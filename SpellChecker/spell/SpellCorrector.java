@@ -57,8 +57,8 @@ public class SpellCorrector implements ISpellCorrector{
 		editList.clear();
 		//editSet.clear();
 		Distance2 = false;
-		if (launch.find(inputWord) != null) {
-			return inputWord;
+		if (launch.find(inputWord.toLowerCase()) != null) {
+			return inputWord.toLowerCase();
 		}
 
 		Deletion(inputWord);
@@ -85,7 +85,7 @@ public class SpellCorrector implements ISpellCorrector{
 			replaceWord = checkList(editList2);
 		}
 
-		return replaceWord;
+		return replaceWord.toLowerCase();
 	}
 
 	public String checkList(List<String> editList){
