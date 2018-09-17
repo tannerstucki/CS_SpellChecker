@@ -177,6 +177,9 @@ public class Trie implements ITrie{
 				if (newCurNode.node_array[i] == null) {
 					trieMatch = false;
 				}
+			if (ogCurNode.frequency != newTempNode.frequency) {
+				trieMatch = false;
+			}
 				Node ogTempNode = ogCurNode.node_array[i];
 				Node newTempNode = newCurNode.node_array[i];
 				equalsHelper(ogTempNode, newTempNode);
