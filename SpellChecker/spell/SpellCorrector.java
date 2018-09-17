@@ -85,7 +85,7 @@ public class SpellCorrector implements ISpellCorrector{
 			replaceWord = checkList(editList2);
 		}
 
-		return replaceWord.toLowerCase();
+		return replaceWord;
 	}
 
 	public String checkList(List<String> editList){
