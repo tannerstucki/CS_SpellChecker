@@ -28,7 +28,7 @@ public class SpellCorrector implements ISpellCorrector{
 			scan.close();
 
 			//all this was to test equals
-			/*Scanner scan2 = new Scanner(new File("tester.txt"));
+			/*Scanner scan2 = new Scanner(new File("tester2.txt"));
 			while(scan2.hasNext()){
 				String file_in2 = scan2.next();
 				if(isAlpha(file_in2)){

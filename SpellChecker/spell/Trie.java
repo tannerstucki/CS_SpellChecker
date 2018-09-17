@@ -173,13 +173,13 @@ public class Trie implements ITrie{
 
 	public boolean equalsHelper(Node ogCurNode, Node newCurNode){
 		for (int i = 0; i < ogCurNode.node_array.length; i++) {
+			if (ogCurNode.frequency != newCurNode.frequency) {
+				trieMatch = false;
+			}
 			if (ogCurNode.node_array[i] != null) {
 				if (newCurNode.node_array[i] == null) {
 					trieMatch = false;
 				}
-			if (ogCurNode.frequency != newTempNode.frequency) {
-				trieMatch = false;
-			}
 				Node ogTempNode = ogCurNode.node_array[i];
 				Node newTempNode = newCurNode.node_array[i];
 				equalsHelper(ogTempNode, newTempNode);
