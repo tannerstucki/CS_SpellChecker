@@ -15,7 +15,7 @@ public class Trie implements ITrie{
 
 
 	//constructor
-	Trie (){
+	public Trie (){
 
 	}
 
